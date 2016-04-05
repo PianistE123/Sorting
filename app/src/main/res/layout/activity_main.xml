@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pianist.finalproject.List"
+    android:background="#1A237E"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Алгоритмы сортировки:"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-regular"
+        android:layout_margin="8dp"
+        android:textSize="20sp"
+        android:textColor="#fff"
+        android:alpha="0.87"
+        android:layout_centerHorizontal="true"/>
+    <ScrollView
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:background="@drawable/button"
+                android:id="@+id/quick"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="20dp"
+                android:text='Быстрая сортировка'
+                android:textColor="#E3F2FD"
+                android:layout_centerHorizontal="true"
+                android:onClick="infAboutQuick"/>
+            <Button
+                android:background="@drawable/button"
+                android:id="@+id/bubbles"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="20dp"
+                android:text="Пузырьковая сортировка"
+                android:textColor="#E3F2FD"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/quick"
+                android:onClick="infAboutBubbles"/>
+            <Button
+                android:background="@drawable/button"
+                android:id="@+id/chet"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="20dp"
+                android:text="Чётно-нечётная сортировка"
+                android:textColor="#E3F2FD"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/bubbles"
+                android:onClick="infAboutChet"/>
+            <Button
+                android:background="@drawable/button"
+                android:id="@+id/shake"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="20dp"
+                android:text="сортировка перемешиванием"
+                android:textColor="#E3F2FD"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/chet"
+                android:onClick="infAboutShake"/>
+            <Button
+                android:background="@drawable/button"
+                android:id="@+id/ches"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="20dp"
+                android:text="Сортировка рассчёской"
+                android:textColor="#E3F2FD"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/shake"
+                android:onClick="infAboutChes"/>
+            <Button
+                android:background="@drawable/button"
+                android:id="@+id/silly"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:padding="20dp"
+                android:text='"глупая" сортировка'
+                android:textColor="#E3F2FD"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/ches"
+                android:onClick="infAboutSilly"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
