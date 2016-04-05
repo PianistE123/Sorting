@@ -23,15 +23,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/article_text_view">
-        <TextView
-            android:id="@+id/information_text_view"
-            android:textColor="#E3E3E3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_margin="8dp"
-            android:paddingBottom="8dp"
-            android:textSize="14sp"
-            android:text="" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/information_text_view"
+                android:textColor="#E3E3E3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:paddingBottom="8dp"
+                android:textSize="14sp"
+                android:text="" />
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerInside"
+                android:layout_below="@id/information_text_view"
+                android:id="@+id/image_view"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
     </ScrollView>
 </RelativeLayout>
