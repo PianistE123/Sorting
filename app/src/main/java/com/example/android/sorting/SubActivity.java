@@ -3,6 +3,7 @@ package com.example.android.sorting;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class SubActivity extends AppCompatActivity {

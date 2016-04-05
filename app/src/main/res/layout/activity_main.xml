@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.pianist.finalproject.List"
-    android:background="#1A237E"
+    android:background="#0D47A1"
     android:orientation="vertical">
     <TextView
         android:id="@+id/header"
@@ -37,11 +37,15 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
                 android:padding="20dp"
+                android:alpha="0.8"
+                android:shadowColor="#000"
                 android:text='Быстрая сортировка'
+                android:textStyle="bold"
                 android:textColor="#E3F2FD"
                 android:layout_centerHorizontal="true"
                 android:onClick="infAboutQuick"/>
             <Button
+                android:alpha="0.8"
                 android:background="@drawable/button"
                 android:id="@+id/bubbles"
                 android:layout_width="280dp"
@@ -49,11 +53,13 @@
                 android:layout_margin="8dp"
                 android:padding="20dp"
                 android:text="Пузырьковая сортировка"
+                android:textStyle="bold"
                 android:textColor="#E3F2FD"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/quick"
                 android:onClick="infAboutBubbles"/>
             <Button
+                android:alpha="0.8"
                 android:background="@drawable/button"
                 android:id="@+id/chet"
                 android:layout_width="280dp"
@@ -61,11 +67,13 @@
                 android:layout_margin="8dp"
                 android:padding="20dp"
                 android:text="Чётно-нечётная сортировка"
+                android:textStyle="bold"
                 android:textColor="#E3F2FD"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/bubbles"
                 android:onClick="infAboutChet"/>
             <Button
+                android:alpha="0.8"
                 android:background="@drawable/button"
                 android:id="@+id/shake"
                 android:layout_width="280dp"
@@ -73,11 +81,13 @@
                 android:layout_margin="8dp"
                 android:padding="20dp"
                 android:text="сортировка перемешиванием"
+                android:textStyle="bold"
                 android:textColor="#E3F2FD"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/chet"
                 android:onClick="infAboutShake"/>
             <Button
+                android:alpha="0.8"
                 android:background="@drawable/button"
                 android:id="@+id/ches"
                 android:layout_width="280dp"
@@ -85,11 +95,13 @@
                 android:layout_margin="8dp"
                 android:padding="20dp"
                 android:text="Сортировка рассчёской"
+                android:textStyle="bold"
                 android:textColor="#E3F2FD"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/shake"
                 android:onClick="infAboutChes"/>
             <Button
+                android:alpha="0.8"
                 android:background="@drawable/button"
                 android:id="@+id/silly"
                 android:layout_width="280dp"
@@ -97,6 +109,7 @@
                 android:layout_margin="8dp"
                 android:padding="20dp"
                 android:text='"глупая" сортировка'
+                android:textStyle="bold"
                 android:textColor="#E3F2FD"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/ches"
